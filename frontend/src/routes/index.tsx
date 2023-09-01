@@ -11,6 +11,7 @@ const AllRoutes = () => {
         <Router>
           <Routes>
             <Route path="/" element={<LandingPage />} />
+            <Route path="/login/inventory"/>
           </Routes>
         </Router>
       </QueryClientProvider>
