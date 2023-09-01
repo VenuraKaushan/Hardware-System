@@ -37,7 +37,7 @@ const Inventory = () => {
             <Button
               variant="gradient"
               component="a"
-              href="/login/admin"
+              href="/login/inventory/"
               gradient={{ from: "teal", to: "lime", deg: 105 }}
             >
               Inventory Manage
