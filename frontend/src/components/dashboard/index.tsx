@@ -95,7 +95,7 @@ const tabs = {
   ],
 };
 
-export function NavbarSegmented() {
+const NavbarSegmented= () => {
   const { classes, cx } = useStyles();
   const [section, setSection] = useState<'account' | 'general'>('account');
   const [active, setActive] = useState('Billing');
@@ -152,3 +152,4 @@ export function NavbarSegmented() {
     </Navbar>
   );
 }
+export default NavbarSegmented;
