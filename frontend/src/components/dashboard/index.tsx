@@ -76,16 +76,14 @@ const useStyles = createStyles((theme) => ({
 
 const tabs = {
   account: [
-    { link: '', label: 'Notifications', icon: IconBellRinging },
+    { link: '', label: 'Orders', icon: IconShoppingCart },
     { link: '', label: 'Billing', icon: IconReceipt2 },
     { link: '', label: 'Security', icon: IconFingerprint },
-    { link: '', label: 'SSH Keys', icon: IconKey },
     { link: '', label: 'Databases', icon: IconDatabaseImport },
-    { link: '', label: 'Authentication', icon: Icon2fa },
-    { link: '', label: 'Other Settings', icon: IconSettings },
   ],
   general: [
-    { link: '', label: 'Orders', icon: IconShoppingCart },
+    
+    { link: '', label: 'Billing', icon: IconReceipt2 },
     { link: '', label: 'Receipts', icon: IconLicense },
     { link: '', label: 'Reviews', icon: IconMessage2 },
     { link: '', label: 'Messages', icon: IconMessages },
@@ -119,7 +117,7 @@ const NavbarSegmented= () => {
     <Navbar height={840} width={{ sm: 300 }} p="md" className={classes.navbar}>
       <Navbar.Section>
         <Text weight={500} size="sm" className={classes.title} color="dimmed" mb="xs">
-          bgluesticker@mantine.dev
+          SensusHub@Gmail.com
         </Text>
 
         <SegmentedControl
@@ -128,8 +126,8 @@ const NavbarSegmented= () => {
           transitionTimingFunction="ease"
           fullWidth
           data={[
-            { label: 'Account', value: 'account' },
-            { label: 'System', value: 'general' },
+            { label: 'Stock', value: 'account' },
+            { label: 'Cashier', value: 'general' },
           ]}
         />
       </Navbar.Section>
