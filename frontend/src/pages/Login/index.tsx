@@ -10,7 +10,7 @@ const ManageHardware = forwardRef<HTMLInputElement>((props,ref) => {
     <div style={{ height: "100vh" , backgroundImage:`url(${backgroundimg})`, backgroundSize: 'cover', backgroundPosition: 'center', display: 'flex', justifyContent: 'center', alignItems: 'center'  }} ref={ref}>
       <Group position="center"  spacing={100}  >
           <Inventory />
-          <Cashier />
+  
       </Group>
     </div>
   );
