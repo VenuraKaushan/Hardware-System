@@ -1,5 +1,5 @@
 import { Button, Card, Group, Image, Text } from "@mantine/core";
-import Inven from "../../assets/Inventory.jpg"
+import Inven from "../../assets/Dashboard.png"
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -40,7 +40,7 @@ const Inventory = () => {
               href="/login/inventory/"
               gradient={{ from: "teal", to: "lime", deg: 105 }}
             >
-              Inventory Manage
+              Admin Login
             </Button>
           </Group>
         </Card.Section>
