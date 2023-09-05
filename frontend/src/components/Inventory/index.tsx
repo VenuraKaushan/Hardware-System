@@ -1,5 +1,5 @@
 import { Button, Card, Group, Image, Text } from "@mantine/core";
-import Inven from "../../assets/Dashboard.png"
+import Inven from "../../assets/Dashboard.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -27,9 +27,7 @@ const Inventory = () => {
         </Card.Section>
 
         <Card.Section inheritPadding>
-          <Text weight={400} p={20} style={{ textAlign: "justify" }}>
-           
-          </Text>
+          <Text weight={400} p={20} style={{ textAlign: "justify" }}></Text>
         </Card.Section>
         <Card.Section>
           <Group position="center" grow m={10}>
