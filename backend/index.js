@@ -2,6 +2,8 @@ import  express  from "express";
 import 'dotenv/config';
 import cors from 'cors';
 import dbConnect from "./configs/dbconfig";
+import userRoutes from './routes/userRoutes.js';
+
 
 const app = express();
 
@@ -26,12 +28,10 @@ app.get('/',(req,res)=>{
     res.send("Hardware PROJECT");
 });
 
-
-
-
-
+// forwarding to user routes
+app.use("/user/",userRoutes);
 
 app.listen(PORT,()=>{
-    console.log(`Server is started on port ${PORT}🚀👍`);
+    console.log(`🚀 Server is started on port ${PORT}`);
     dbConnect();
 });
